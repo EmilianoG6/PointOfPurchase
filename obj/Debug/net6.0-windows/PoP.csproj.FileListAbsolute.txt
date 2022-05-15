@@ -22,3 +22,4 @@ D:\OneDrive\OneDrive - Universidad Autonoma de Nuevo León\Base de Datos - Prof.
 D:\OneDrive\OneDrive - Universidad Autonoma de Nuevo León\Base de Datos - Prof. Estela Alvarado Díaz de León\PIA_PoP\obj\Debug\net6.0-windows\PoP.pdb
 D:\OneDrive\OneDrive - Universidad Autonoma de Nuevo León\Base de Datos - Prof. Estela Alvarado Díaz de León\PIA_PoP\obj\Debug\net6.0-windows\PoP.genruntimeconfig.cache
 D:\OneDrive\OneDrive - Universidad Autonoma de Nuevo León\Base de Datos - Prof. Estela Alvarado Díaz de León\PIA_PoP\obj\Debug\net6.0-windows\ref\PoP.dll
+D:\OneDrive\OneDrive - Universidad Autonoma de Nuevo León\Base de Datos - Prof. Estela Alvarado Díaz de León\PIA_PoP\obj\Debug\net6.0-windows\PoP.Properties.Resources.resources
