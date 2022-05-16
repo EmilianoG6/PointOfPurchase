@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vaFsrvJGHD7WafquLj1haDj//WQ0Gksk27LiXl8rHL2Isvl0Xdx2MWVN5HxC+5fPRCAbdjIq5/NTijcHZsJBpg==",
+  "dgSpecHash": "sTF2Z4vAeOXaygdOQCMravuid7dynfbBe/7O9X5hDVB1nZT4p/syFzU1mp/J82qRcEm2pEPDEhYqwTWI7PcyPg==",
   "success": true,
-  "projectFilePath": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PIA_PoP\\PoP.csproj",
+  "projectFilePath": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PoP\\PoP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\emili\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

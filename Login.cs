@@ -8,12 +8,6 @@ namespace PIA_PoP
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            SQL toReadVenta = new SQL();
-            dataGridView1.DataSource = toReadVenta.ReadVentas();
-        }
-
         private void textBoxLoginUsuario_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
@@ -36,7 +30,8 @@ namespace PIA_PoP
             SQL toConnect = new SQL();
             if (toConnect.GetConnection())
             {
-                MessageBox.Show("Connection Open!");
+                Menu menu = new Menu();
+                this.Hide(); menu.Show();
             }
             else
             {

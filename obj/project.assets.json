@@ -460,11 +460,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PIA_PoP\\PoP.csproj",
+      "projectUniqueName": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PoP\\PoP.csproj",
       "projectName": "PoP",
-      "projectPath": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PIA_PoP\\PoP.csproj",
+      "projectPath": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PoP\\PoP.csproj",
       "packagesPath": "C:\\Users\\emili\\.nuget\\packages\\",
-      "outputPath": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PIA_PoP\\obj\\",
+      "outputPath": "D:\\OneDrive\\OneDrive - Universidad Autonoma de Nuevo León\\Base de Datos - Prof. Estela Alvarado Díaz de León\\PoP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Programas\\Microsoft Visual Studio\\Shared\\NuGetPackages"

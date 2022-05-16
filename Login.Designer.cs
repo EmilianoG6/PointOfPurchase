@@ -30,15 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.buttonLogin = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pictureBoxFAST1Logo = new System.Windows.Forms.PictureBox();
             this.panelLogin = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxLoginUsuario = new System.Windows.Forms.TextBox();
             this.textBoxLoginContraseña = new System.Windows.Forms.TextBox();
             this.pictureBoxXMark = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFAST1Logo)).BeginInit();
             this.panelLogin.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxXMark)).BeginInit();
@@ -63,31 +60,6 @@
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
             // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Malgun Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(162, 295);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(108, 23);
-            this.button2.TabIndex = 1;
-            this.button2.TabStop = false;
-            this.button2.Text = "Mostrar";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(276, 269);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(199, 356);
-            this.dataGridView1.TabIndex = 2;
-            this.dataGridView1.TabStop = false;
-            this.dataGridView1.Visible = false;
-            // 
             // pictureBoxFAST1Logo
             // 
             this.pictureBoxFAST1Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -102,11 +74,9 @@
             // panelLogin
             // 
             this.panelLogin.Controls.Add(this.label1);
-            this.panelLogin.Controls.Add(this.dataGridView1);
             this.panelLogin.Controls.Add(this.textBoxLoginUsuario);
             this.panelLogin.Controls.Add(this.textBoxLoginContraseña);
             this.panelLogin.Controls.Add(this.buttonLogin);
-            this.panelLogin.Controls.Add(this.button2);
             this.panelLogin.Location = new System.Drawing.Point(341, 22);
             this.panelLogin.Name = "panelLogin";
             this.panelLogin.Size = new System.Drawing.Size(353, 308);
@@ -162,7 +132,7 @@
             this.pictureBoxXMark.TabStop = false;
             this.pictureBoxXMark.Click += new System.EventHandler(this.pictureBoxXMark_Click);
             // 
-            // GUI
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -171,13 +141,13 @@
             this.Controls.Add(this.pictureBoxXMark);
             this.Controls.Add(this.panelLogin);
             this.Controls.Add(this.pictureBoxFAST1Logo);
+            this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "GUI";
+            this.Name = "Login";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.GUI_MouseDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFAST1Logo)).EndInit();
             this.panelLogin.ResumeLayout(false);
             this.panelLogin.PerformLayout();
@@ -189,8 +159,6 @@
         #endregion
 
         private Button buttonLogin;
-        private Button button2;
-        private DataGridView dataGridView1;
         private PictureBox pictureBoxFAST1Logo;
         private Panel panelLogin;
         private Label label1;
