@@ -31,8 +31,9 @@
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.buttonAgregar = new System.Windows.Forms.Button();
             this.buttonEditar = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonEliminar = new System.Windows.Forms.Button();
             this.panelCUD = new System.Windows.Forms.Panel();
+            this.buttonMostrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.panelCUD.SuspendLayout();
             this.SuspendLayout();
@@ -59,7 +60,7 @@
             this.buttonAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonAgregar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonAgregar.ForeColor = System.Drawing.Color.White;
-            this.buttonAgregar.Location = new System.Drawing.Point(53, 124);
+            this.buttonAgregar.Location = new System.Drawing.Point(53, 27);
             this.buttonAgregar.Name = "buttonAgregar";
             this.buttonAgregar.Size = new System.Drawing.Size(152, 72);
             this.buttonAgregar.TabIndex = 1;
@@ -74,38 +75,55 @@
             this.buttonEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEditar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buttonEditar.ForeColor = System.Drawing.Color.White;
-            this.buttonEditar.Location = new System.Drawing.Point(53, 267);
+            this.buttonEditar.Location = new System.Drawing.Point(53, 183);
             this.buttonEditar.Name = "buttonEditar";
             this.buttonEditar.Size = new System.Drawing.Size(152, 72);
             this.buttonEditar.TabIndex = 2;
             this.buttonEditar.Text = "Editar";
             this.buttonEditar.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonEliminar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(44)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(53, 415);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(152, 72);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Editar";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(44)))));
+            this.buttonEliminar.FlatAppearance.BorderSize = 0;
+            this.buttonEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEliminar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonEliminar.ForeColor = System.Drawing.Color.White;
+            this.buttonEliminar.Location = new System.Drawing.Point(53, 333);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(152, 72);
+            this.buttonEliminar.TabIndex = 3;
+            this.buttonEliminar.Text = "Eliminar";
+            this.buttonEliminar.UseVisualStyleBackColor = false;
             // 
             // panelCUD
             // 
+            this.panelCUD.Controls.Add(this.buttonMostrar);
             this.panelCUD.Controls.Add(this.buttonAgregar);
-            this.panelCUD.Controls.Add(this.button1);
+            this.panelCUD.Controls.Add(this.buttonEliminar);
             this.panelCUD.Controls.Add(this.buttonEditar);
             this.panelCUD.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelCUD.Location = new System.Drawing.Point(0, 0);
             this.panelCUD.Name = "panelCUD";
             this.panelCUD.Size = new System.Drawing.Size(269, 596);
             this.panelCUD.TabIndex = 4;
+            // 
+            // buttonMostrar
+            // 
+            this.buttonMostrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(27)))), ((int)(((byte)(44)))));
+            this.buttonMostrar.FlatAppearance.BorderSize = 0;
+            this.buttonMostrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.buttonMostrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonMostrar.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonMostrar.ForeColor = System.Drawing.Color.White;
+            this.buttonMostrar.Location = new System.Drawing.Point(53, 493);
+            this.buttonMostrar.Name = "buttonMostrar";
+            this.buttonMostrar.Size = new System.Drawing.Size(152, 72);
+            this.buttonMostrar.TabIndex = 4;
+            this.buttonMostrar.Text = "Mostrar";
+            this.buttonMostrar.UseVisualStyleBackColor = false;
+            this.buttonMostrar.Click += new System.EventHandler(this.buttonMostrar_Click);
             // 
             // CRUD
             // 
@@ -129,7 +147,8 @@
         private DataGridView dataGridView;
         private Button buttonAgregar;
         private Button buttonEditar;
-        private Button button1;
+        private Button buttonEliminar;
         private Panel panelCUD;
+        private Button buttonMostrar;
     }
 }

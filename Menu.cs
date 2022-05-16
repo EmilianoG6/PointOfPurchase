@@ -8,6 +8,8 @@ namespace PIA_PoP
             InitializeComponent();
         }
 
+        CRUD CRUD = new CRUD();
+
         private void pictureBoxXMark_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -42,44 +44,70 @@ namespace PIA_PoP
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
-        private void AbrirFormHijo(object formHijo)
+        private void AbrirFormHijo(int op)
         {
             if (this.panelContenedor.Controls.Count > 0)
             {
                 this.panelContenedor.Controls.RemoveAt(0);
             }
-                Form fh = formHijo as Form;
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                this.panelContenedor.Controls.Add(fh);
-                this.panelContenedor.Tag = fh;
-                fh.Show();
-            
+            CRUD.TopLevel = false;
+            CRUD.Dock = DockStyle.Fill;
+            this.panelContenedor.Controls.Add(CRUD);
+            this.panelContenedor.Tag = CRUD;
+            CRUD.Show();
+            switch (op)
+            {
+                case 1:
+                    {
+                        CRUD.toReadVenta();
+                        break;
+                    }
+                case 2:
+                    {
+                        CRUD.toReadProducto();
+                        break;
+                    }
+                case 3:
+                    {
+                        MessageBox.Show("Empleados!");
+                        break;
+                    }
+                case 4:
+                    {
+                        MessageBox.Show("Clientes!");
+                        break;
+                    }
+                case 5:
+                    {
+                        MessageBox.Show("Proveedores!");
+                        break;
+                    }
+            }
         }
 
         private void buttonVentas_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new CRUD());
+            AbrirFormHijo(1);
         }
 
         private void buttonProductos_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new CRUD());
+            AbrirFormHijo(2);
         }
 
         private void buttonEmpleados_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new CRUD());
+            AbrirFormHijo(3);
         }
 
         private void buttonClientes_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new CRUD());
+            AbrirFormHijo(4);
         }
 
         private void buttonProveedores_Click(object sender, EventArgs e)
         {
-            AbrirFormHijo(new CRUD());
+            AbrirFormHijo(5);
         }
     }
 }
