@@ -1743,7 +1743,6 @@ namespace PIA_PoP
         }       
 
     }    
-
     public class Empresa
     {
         public string? NombreEmpresa { get; set; }
@@ -1891,6 +1890,5 @@ namespace PIA_PoP
         public string? Unidad { get; set; }
         public string? Simbolo { get; set; }
     }
-
     
 }

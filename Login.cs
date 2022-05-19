@@ -27,15 +27,34 @@ namespace PIA_PoP
 
         private void buttonLogin_Click(object sender, EventArgs e)
         {
-            SQL toConnect = new SQL();
-            if (toConnect.GetConnection())
+            if (textBoxLoginUsuario.Text == "admin" && textBoxLoginContraseña.Text == "admin") {
+                SQL toConnect = new SQL();
+                if (toConnect.GetConnection())
+                {
+                    Menu menu = new Menu();
+                    this.Hide(); menu.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Connection Error!");
+                }
+            }else if(textBoxLoginUsuario.Text == "user" && textBoxLoginContraseña.Text == "user")
             {
-                Menu menu = new Menu();
-                this.Hide(); menu.Show();
+                SQL toConnect = new SQL();
+                if (toConnect.GetConnection())
+                {
+                    Menu menu = new Menu();
+                    this.Hide(); menu.Show();
+                    menu.panelUser();
+                }
+                else
+                {
+                    MessageBox.Show("Connection Error!");
+                }
             }
             else
             {
-                MessageBox.Show("Connection Error!");
+                MessageBox.Show("Usuario y/o contraseña incorrectos.");
             }
         }
 

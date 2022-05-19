@@ -63,6 +63,7 @@
             // pictureBoxFAST1Logo
             // 
             this.pictureBoxFAST1Logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxFAST1Logo.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBoxFAST1Logo.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxFAST1Logo.Image")));
             this.pictureBoxFAST1Logo.Location = new System.Drawing.Point(-76, -118);
             this.pictureBoxFAST1Logo.Name = "pictureBoxFAST1Logo";

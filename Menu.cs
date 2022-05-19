@@ -130,6 +130,17 @@ namespace PIA_PoP
             }
         }        
 
+        public void panelUser()
+        {
+            buttonEmpleados.Visible = false; panel4.Visible = false;
+            buttonProductos.Visible = false; panel5.Visible = false;
+            buttonClientes.Visible = false; panel6.Visible = false;
+            buttonProveedores.Visible = false; panel7.Visible = false;
+            buttonCategoría.Visible = false; panel8.Visible = false;
+            buttonMarca.Visible = false; panel2.Visible = false;
+            buttonUnidad.Visible = false; panel1.Visible = false;
+        }
+
         private void pictureBoxMenuFAST1Logo_Click(object sender, EventArgs e)
         {
             AbrirFormHijo(0);
@@ -789,6 +800,13 @@ namespace PIA_PoP
                     FormOrden.toDetail(detailOrdenClick);
                 }
             }
-        }        
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login login = new Login();
+            login.Show();
+        }
     }
 }
